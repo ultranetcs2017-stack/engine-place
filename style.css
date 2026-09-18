@@ -96,3 +96,44 @@ footer div{display:flex;justify-content:center;gap:22px}footer small{color:#637f
 .phone-list b,.phone-list small{display:block}
 .phone-list b{font-size:9px;color:#dff8ff;letter-spacing:.5px}
 .phone-list small{font-size:7px;color:#789cac;margin-top:2px}
+
+/* ===== V5 HERO VISUAL — acabamento premium ===== */
+.visual{height:600px}
+.visual:after{width:570px;height:570px;background:radial-gradient(circle,#00d8ff1c 0,#006d9b12 42%,transparent 72%)}
+.radar{width:540px;height:540px;opacity:.95;filter:drop-shadow(0 0 14px #00cfff88)}
+.radar:before{border:2px solid #00d8ffb8;box-shadow:inset 0 0 30px #00d8ff24,0 0 26px #00d8ff25}
+.radar:after{inset:38px;border:1px solid #00d8ff8a}
+.radar-ring{inset:82px;border:1px solid #00d8ff70}.radar-ring.r2{inset:137px}.radar-ring.r3{inset:192px}
+.radar-cross{background:#00d8ff42}
+.radar-sweep{inset:7px;background:conic-gradient(from 0deg,transparent 0 294deg,#00d8ff08 307deg,#00d8ff32 332deg,#00eaff9c 354deg,#baffff 359deg,transparent 360deg);animation:radarSpin 4s linear infinite}
+.radar-sweep:after{height:2px;width:47%;box-shadow:0 0 18px 2px #00eaff}
+.radar-dot{width:9px;height:9px;background:#b8ffff;box-shadow:0 0 18px 6px #00dcff}
+
+.phone{height:525px;width:265px;border:4px solid #1a4a68;border-radius:42px;background:linear-gradient(155deg,#071e30 0%,#020a12 45%,#01060b 100%);transform:rotate(6deg);box-shadow:0 0 0 1px #2c668255,0 24px 80px #000b,0 0 65px #00cfff32;padding:55px 18px 18px;overflow:hidden}
+.phone:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,#ffffff08 0,transparent 26%,transparent 70%,#00cfff08 100%);pointer-events:none}
+.speaker{top:14px;left:78px;width:102px;height:21px;background:#00060b;box-shadow:inset 0 -1px #16364a}
+.phone-screen{height:100%;display:flex;flex-direction:column;align-items:center;padding-top:12px}
+.app-logo{display:flex;align-items:center;gap:10px;margin-top:10px;filter:drop-shadow(0 0 12px #00cfff42)}
+.app-cart{width:68px;height:48px;position:relative}
+.app-cart .speed{position:absolute;height:5px;border-radius:5px;background:linear-gradient(90deg,#00eaff,#087cff);left:0}
+.app-cart .s1{width:34px;top:7px}.app-cart .s2{width:44px;top:20px}.app-cart .s3{width:54px;top:33px}
+.app-cart .basket{position:absolute;left:35px;top:4px;color:#f2fbff;font-size:36px;transform:skew(-8deg);text-shadow:0 0 8px #fff4}
+.app-cart .lens{position:absolute;right:-8px;top:6px;color:#00dcff;font-size:28px}
+.app-word{display:flex;flex-direction:column;align-items:flex-start;line-height:.78;transform:skew(-5deg)}
+.app-word b{font-size:28px;letter-spacing:1px;color:#f5fbff;text-shadow:0 2px #7290a0}
+.app-word strong{font-size:30px;letter-spacing:2px;color:#00d8ff;text-shadow:0 0 12px #008cff88}
+.app-tagline{font-size:6.2px;letter-spacing:1.25px;color:#b2c7d2;margin-top:14px}
+.app-divider{width:78%;height:1px;background:linear-gradient(90deg,transparent,#00d8ff99,transparent);margin:28px 0 19px;box-shadow:0 0 8px #00d8ff}
+.app-menu{width:82%;display:grid;gap:10px;text-align:left}
+.app-menu>div{display:flex;align-items:center;gap:12px;padding:7px 4px;border-bottom:1px solid #0d3448}
+.app-menu .ico{width:20px;text-align:center;color:#00dfff;font-size:16px;text-shadow:0 0 8px #00dfff}
+.app-menu b{font-size:10px;color:#dff7ff;letter-spacing:.4px}
+
+.alert{width:195px;padding:15px 16px;border-color:#00dfff;background:linear-gradient(135deg,#061b2aee,#03111bee);box-shadow:0 0 30px #00dfff28}
+.alert small{color:#26eaff}.alert b{font-size:15px}.alert span{font-size:9px}
+.a1{left:-12px;top:100px}.a2{right:-20px;top:188px}.a3{left:0;bottom:70px}
+
+@media(max-width:850px){
+ .visual{height:535px}.radar{width:430px;height:430px}.phone{height:465px;width:235px}
+ .app-word b{font-size:23px}.app-word strong{font-size:25px}.app-cart{transform:scale(.85)}
+}
